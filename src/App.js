@@ -1,8 +1,7 @@
 import React, {Component} from 'react'
-import Header from './components/Header'
-import Clock from './components/Clock'
-import Pattaya from './components/Pattaya'
-import logo from './logo.svg'
+import Header from './components/Header/Header'
+import Clock from './components/Clock/Clock'
+import Pattaya from './components/Pattaya/Pattaya'
 import './App.css'
 
 class App extends Component {
