@@ -68,6 +68,9 @@ typings/
 # production
 /build
 
+# generated css files
+src/**/*.css
+
 # misc
 .DS_Store
 .env.local
