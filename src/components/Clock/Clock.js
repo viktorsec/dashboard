@@ -33,7 +33,7 @@ export default class Clock extends Component {
   }
 
   generateTimeString() {
-    return moment().format('hh:mm:ss')
+    return moment().format('HH:mm:ss')
   }
 
   tick() {
