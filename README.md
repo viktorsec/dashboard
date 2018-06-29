@@ -39,4 +39,8 @@ Your app will be available on your network on `{HOST_IP}:5000`.
 
 1. `yarn test`
 
+## Design
+
+Based on [One Dark Vivid Pro](https://atom.io/themes/one-dark-pro-vivid-syntax) theme for VS Code.
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app). See [readme](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).

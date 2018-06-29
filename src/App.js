@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import {Grid, Row, Col} from 'react-bootstrap'
 import Header from './components/Header/Header'
 import Clock from './components/Clock/Clock'
 import Fitness from './components/Fitness/Fitness'
@@ -9,10 +10,22 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header />
-        <Clock />
-        <Pattaya />
-        <Fitness />
+        <Grid>
+          <Row>
+            <Header />
+          </Row>
+          <Row>
+            <Col xs={6} md={4}>
+              <Clock />
+            </Col>
+            <Col xs={6} md={4}>
+              <Pattaya />
+            </Col>
+            <Col xs={6} md={4}>
+              <Fitness />
+            </Col>
+          </Row>
+        </Grid>
       </div>
     )
   }
