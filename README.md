@@ -28,7 +28,7 @@ Your app will be available on your network on `{HOST_IP}:5000`.
 
 1. Get [Now](https://zeit.co/download)
 2. `yarn run build`
-3. `now --public`
+3. `cd build && now --public`
 
 ### Production
 
