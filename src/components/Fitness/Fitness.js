@@ -7,9 +7,9 @@ export default class Fitness extends Component {
     const lostKgs = Number.parseFloat(Weight.Innitial - Weight.Current).toPrecision(2)
 
     return (
-      <p>
+      <div className="Module">
         {lostKgs} kgs lost so far
-      </p>
+      </div>
     )
   }
 }

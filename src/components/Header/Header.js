@@ -18,9 +18,7 @@ export default class Header extends Component {
 
   render() {
     return (
-      <p>
-        <h1>Ružinovský Habitat</h1>
-      </p>
+      <h1>Ružinovský Habitat</h1>
     )
   }
 }

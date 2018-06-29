@@ -76,10 +76,10 @@ export default class Pattaya extends Component {
 
   render() {
     return (
-      <p>
+      <div className="Module">
         Pattaya
         {this.renderStatus()}
-      </p>
+      </div>
     )
   }
 }

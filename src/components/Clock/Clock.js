@@ -42,9 +42,9 @@ export default class Clock extends Component {
 
   render() {
     return (
-      <p>
+      <div className="Module">
         {this.state.timeString}
-      </p>
+      </div>
     )
   }
 }
