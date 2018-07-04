@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import {Grid, Row, Col} from 'react-bootstrap'
 import Header from './components/Header/Header'
+import Blockchain from './components/Blockchain/Blockchain'
 import Clock from './components/Clock/Clock'
 import Fitness from './components/Fitness/Fitness'
 import Pattaya from './components/Pattaya/Pattaya'
@@ -23,6 +24,17 @@ class App extends Component {
             </Col>
             <Col xs={6} md={4}>
               <Fitness />
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={6} md={4}>
+              <Blockchain currency="bitcoin" />
+            </Col>
+            <Col xs={6} md={4}>
+              <Blockchain currency="ethereum" />
+            </Col>
+            <Col xs={6} md={4}>
+              <Blockchain currency="dogecoin" />
             </Col>
           </Row>
         </Grid>

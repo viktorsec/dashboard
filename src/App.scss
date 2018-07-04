@@ -16,6 +16,8 @@ $background: #282c34;
 
 $font-stack: 'Fira Mono', monospace;
 
+$large: 20px;
+
 body {
   height: 100%;
   background-color: $background;
@@ -39,4 +41,8 @@ body {
 
 .redLabel {
   color: $red-dark;
+}
+
+.large {
+  font-size: $large;
 }
