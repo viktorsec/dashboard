@@ -11,3 +11,9 @@ body {
   margin: 1rem;
   padding: 1rem;
   border: #aab1c0 1px solid; }
+
+.greenLabel {
+  color: #89ca78; }
+
+.redLabel {
+  color: #be4f44; }

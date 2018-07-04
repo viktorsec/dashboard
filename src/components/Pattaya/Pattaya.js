@@ -63,12 +63,16 @@ export default class Pattaya extends Component {
     return (
       <div>
         {isOpen === true
-          && <p>OPEN</p>
-          && <p>Closes in {nextStateChange}</p>
+          && <div>
+            <div className="greenLabel">OPEN</div>
+            <div>Closes in {nextStateChange}</div>
+          </div>
         }
         {isOpen === false
-          && <p>CLOSED</p>
-          && <p>Opens in {nextStateChange}</p>
+          && <div>
+            <div className="redLabel">CLOSED</div>
+            <div>Opens in {nextStateChange}</div>
+          </div>
         }
       </div>
     )
