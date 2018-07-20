@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import cx from 'classnames'
 import './Style.css'
 
 export default class Blockchain extends Component {
@@ -29,7 +30,7 @@ export default class Blockchain extends Component {
       ? 'greenLabel'
       : 'redLabel'
     return (
-      <div className={className}>{change}</div>
+      <div className={className}>{change}%</div>
     )
   }
 
@@ -39,17 +40,20 @@ export default class Blockchain extends Component {
     if (data === undefined) {return null}
 
     const name = data.name
-    const priceUsd = data.price_usd
-    const marketCap = data.market_cap_usd
+    const priceUsd = Math.round(data.price_usd * 1000) / 1000
+    const marketCap = Math.round(data.market_cap_usd)
     const change1h = data.percent_change_1h
     const change24h = data.percent_change_24h
     const change7d = data.percent_change_7d
+    const priceClassName = change1h >= 0
+      ? 'greenLabel'
+      : 'redLabel'
 
     return (
       <div className="Module">
         <div style={{padding: '10px'}}>
           <div className="large">{name}</div>
-          <div className="large">${priceUsd}</div>
+          <div className={cx('large', priceClassName)}>${priceUsd}</div>
         </div>
         1h change {this.renderChange(change1h)}<br />
         24h change {this.renderChange(change24h)}<br />

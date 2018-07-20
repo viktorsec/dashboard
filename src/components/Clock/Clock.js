@@ -1,21 +1,8 @@
 import React, {Component} from 'react'
 import moment from 'moment'
-import PropTypes from 'prop-types'
-
-export const propTypes = {
-}
-
-export const defaultProps = {
-}
+import cx from 'classnames'
 
 export default class Clock extends Component {
-  static propTypes = {
-    ...propTypes,
-  }
-
-  static defaultProps = {
-    ...defaultProps,
-  }
 
   constructor(props) {
     super(props)
@@ -42,7 +29,7 @@ export default class Clock extends Component {
 
   render() {
     return (
-      <div className="Module">
+      <div className={cx('Module', 'extralarge')}>
         {this.state.timeString}
       </div>
     )

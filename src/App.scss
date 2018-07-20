@@ -17,6 +17,7 @@ $background: #282c34;
 $font-stack: 'Fira Mono', monospace;
 
 $large: 20px;
+$extra-large: 36px;
 
 body {
   height: 100%;
@@ -45,4 +46,8 @@ body {
 
 .large {
   font-size: $large;
+}
+
+.extralarge {
+  font-size: $extra-large;
 }
