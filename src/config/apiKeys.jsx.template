@@ -1,0 +1,2 @@
+// don't publish this on the web
+export const IftttWebhookKey = "INSERT_API_KEY"

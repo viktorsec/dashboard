@@ -35,6 +35,13 @@ Your app will be available on your network on `{HOST_IP}:5000`.
 1. `yarn run build`
 2. Copy static build files to ftp server.
 
+### Setup IFTTT
+
+Don't use IFTTT outside of safe environments.
+
+1. `cd src/config && cp apiKeys.jsx.template apiKeys.jsx`
+2. Set IFTTT API key.
+
 ## Testing
 
 1. `yarn test`
