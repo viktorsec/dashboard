@@ -1,9 +1,9 @@
 import http from 'http'
 import url from 'url'
-import {IftttWebhookKey} from './../config/apiKeys'
+import {IFTTT_WEBHOOK_API_KEY} from './../config/apiKeys'
 
 export default function triggerIfttt(event, value1, value2, value3) {
-  const endpoint = `https://maker.ifttt.com/trigger/${event}/with/key/${IftttWebhookKey}`
+  const endpoint = `https://maker.ifttt.com/trigger/${event}/with/key/${IFTTT_WEBHOOK_API_KEY}`
   const payload = JSON.stringify({value1, value2, value3})
   const {hostname, port, path} = url.parse(endpoint)
 
