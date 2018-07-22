@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import cx from 'classnames'
 import {getCurrentWeather, getForecastWeather} from './../../services/xuApi'
 
-const TEN_MINUTES = 10 * 1000
+const TEN_MINUTES = 10 * 60 * 1000
 
 export default class Weather extends Component {
   state = {}
