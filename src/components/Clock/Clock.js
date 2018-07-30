@@ -29,7 +29,7 @@ export default class Clock extends Component {
 
   render() {
     return (
-      <div className={cx('Module', 'extralarge')}>
+      <div className={cx('card', 'smallcard', 'extralarge')}>
         {this.state.timeString}
       </div>
     )

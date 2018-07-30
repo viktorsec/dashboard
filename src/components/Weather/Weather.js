@@ -49,7 +49,7 @@ export default class Weather extends Component {
       const temperatureClassName = cx('extralarge', temperatureLabel)
  
       return (
-        <div className="Module">
+        <div className={cx('card', 'smallcard')}>
           <div className={temperatureClassName}>{temperature}°C</div>
           <div className="">
             <div>{location}</div>

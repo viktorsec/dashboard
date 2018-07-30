@@ -3,14 +3,24 @@ body {
   background-color: #282c34;
   font-family: "Fira Mono", monospace; }
 
-.App {
+.app {
   color: #aab1c0;
   text-align: center; }
 
-.Module {
+.card {
   margin: 1rem;
   padding: 1rem;
-  border: #aab1c0 1px solid; }
+  border: #aab1c0 1px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .card.smallcard {
+    height: 12rem; }
+  .card.mediumcard {
+    height: 25rem; }
+  .card.largecard {
+    height: 38rem; }
 
 .redLabel {
   color: #EF596F; }
@@ -21,8 +31,14 @@ body {
 .blueLabel {
   color: #52adf2; }
 
+.purpleLabel {
+  color: #d55fde; }
+
 .large {
-  font-size: 20px; }
+  font-size: 16pt; }
 
 .extralarge {
-  font-size: 36px; }
+  font-size: 28pt; }
+
+h1.huge {
+  font-size: 34pt; }

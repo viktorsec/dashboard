@@ -50,7 +50,7 @@ export default class Blockchain extends Component {
       : 'redLabel'
 
     return (
-      <div className="Module">
+      <div className={cx('card', 'largecard')}>
         <div style={{padding: '10px'}}>
           <div className="large">{name}</div>
           <div className={cx('large', priceClassName)}>${priceUsd}</div>

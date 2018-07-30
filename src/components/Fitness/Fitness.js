@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import cx from 'classnames'
 import {Weight, Keto} from './Data'
 import moment from 'moment'
 
@@ -34,8 +35,9 @@ export default class Fitness extends Component {
     const {lostToday} = this.state
     
     return (
-      <div className="Module">
+      <div className={cx('card', 'mediumcard')}>
         <div className="large">{name}</div>
+        <br />
         On keto for {onKetoFor} days<br />
         {lostKgs}kgs lost so far<br />
         Estimated {lostToday}g lost today

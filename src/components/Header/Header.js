@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import cx from 'classnames'
 import PropTypes from 'prop-types'
 
 export const propTypes = {
@@ -18,7 +19,9 @@ export default class Header extends Component {
 
   render() {
     return (
-      <h1>Ružinovský Habitat</h1>
+      <h1 className={cx('huge', 'purpleLabel')}>
+        Ružinovský Habitat
+      </h1>
     )
   }
 }

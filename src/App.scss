@@ -14,8 +14,13 @@ $background: #282c34;
 
 $font-stack: 'Fira Mono', monospace;
 
-$large: 20px;
-$extra-large: 36px;
+$large: 16pt;
+$extra-large: 28pt;
+$huge: 34pt;
+
+$small-height: 12rem;
+$medium-height: $small-height * 2 + 1;
+$large-height: $small-height * 3 + 2;
 
 body {
   height: 100%;
@@ -23,15 +28,29 @@ body {
   font-family: $font-stack;
 }
 
-.App {
+.app {
   color: $default-text;
   text-align: center;
 }
 
-.Module {
+.card {
   margin: 1rem;
   padding: 1rem;
   border: $default-text 1px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &.smallcard {
+    height: $small-height;
+  }
+  &.mediumcard {
+    height: $medium-height;
+  }
+  &.largecard {
+    height: $large-height;
+  }
 }
 
 .redLabel {
@@ -46,10 +65,18 @@ body {
   color: $blue;
 }
 
+.purpleLabel {
+  color: $purple;
+}
+
 .large {
   font-size: $large;
 }
 
 .extralarge {
   font-size: $extra-large;
+}
+
+h1.huge {
+  font-size: $huge;
 }

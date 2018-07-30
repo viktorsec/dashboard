@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import moment from 'moment'
+import cx from 'classnames'
 import PropTypes from 'prop-types'
 import {BusinessHours} from './BusinessHours'
 
@@ -80,7 +81,7 @@ export default class Pattaya extends Component {
 
   render() {
     return (
-      <div className="Module">
+      <div className={cx('card', 'smallcard')}>
         <div className="large">Pattaya</div>
         {this.renderStatus()}
       </div>
