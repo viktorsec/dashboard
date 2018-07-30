@@ -33,14 +33,15 @@ Your app will be available on your network on `{HOST_IP}:5000`.
 ### Production
 
 1. `yarn run build`
-2. Copy static build files to ftp server.
+2. `scp -r build/* pi@192.168.2.66:/var/www/html`
 
-### Setup IFTTT
+### Setup API keys
 
-Don't use IFTTT outside of safe environments.
+Don't use API keys outside of safe environments. They are not secure.
 
 1. `cd src/config && cp apiKeys.jsx.template apiKeys.jsx`
 2. Set IFTTT API key.
+3. Set Apixu API key.
 
 ## Testing
 
