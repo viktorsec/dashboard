@@ -3,6 +3,7 @@ import {Grid, Row, Col} from 'react-bootstrap'
 import Header from './components/Header/Header'
 import Blockchain from './components/Blockchain/Blockchain'
 import Clock from './components/Clock/Clock'
+import Fitness from './components/Fitness/Fitness'
 import Weather from './components/Weather/Weather'
 import Pattaya from './components/Pattaya/Pattaya'
 import './App.css'
@@ -18,9 +19,10 @@ class App extends Component {
           <Row>
             <Col xs={6} md={4}>
               <Clock />
+              <Pattaya />
             </Col>
             <Col xs={6} md={4}>
-              <Pattaya />
+              <Fitness name="Viktor" />
             </Col>
             <Col xs={6} md={4}>
               <Weather location="Bratislava" showCurrent />
