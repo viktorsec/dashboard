@@ -48,6 +48,6 @@ Don't use IFTTT outside of safe environments.
 
 ## Design
 
-Based on [One Dark Vivid Pro](https://atom.io/themes/one-dark-pro-vivid-syntax) theme for VS Code.
+Based on [One Dark Vivid Pro](https://atom.io/themes/one-dark-pro-vivid-syntax) theme for VS Code. ([source](https://github.com/jsjlewis96/OneDark-Pro/blob/master/themes/OneDark-Pro-vivid.json))
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app). See [readme](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).

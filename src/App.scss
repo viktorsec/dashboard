@@ -7,11 +7,9 @@ $mono-3: #5c6370;
 $cyan: #2bbac5;
 $blue: #52adf2;
 $purple: #d55fde;
-$green: #89ca78;
-$red-light: #ef596f;
-$red-dark: #be4f44;
-$orange-light: #e5c07b;
-$orange-dark: #d8985f;
+$green: #89CA78;
+$red: #EF596F;
+$orange: #d8985f;
 $background: #282c34;
 
 $font-stack: 'Fira Mono', monospace;
@@ -37,7 +35,7 @@ body {
 }
 
 .redLabel {
-  color: $red-dark;
+  color: $red;
 }
 
 .greenLabel {
