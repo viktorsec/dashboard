@@ -36,12 +36,16 @@ body {
   border: $default-text 1px solid;
 }
 
+.redLabel {
+  color: $red-dark;
+}
+
 .greenLabel {
   color: $green;
 }
 
-.redLabel {
-  color: $red-dark;
+.blueLabel {
+  color: $blue;
 }
 
 .large {

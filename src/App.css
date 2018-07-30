@@ -12,11 +12,14 @@ body {
   padding: 1rem;
   border: #aab1c0 1px solid; }
 
+.redLabel {
+  color: #be4f44; }
+
 .greenLabel {
   color: #89ca78; }
 
-.redLabel {
-  color: #be4f44; }
+.blueLabel {
+  color: #52adf2; }
 
 .large {
   font-size: 20px; }
