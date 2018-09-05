@@ -52,3 +52,12 @@ Don't use API keys outside of safe environments. They are not secure.
 Based on [One Dark Vivid Pro](https://atom.io/themes/one-dark-pro-vivid-syntax) theme for VS Code. ([source](https://github.com/jsjlewis96/OneDark-Pro/blob/master/themes/OneDark-Pro-vivid.json))
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app). See [readme](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
+
+## Docker deployment
+
+1. ssh to server
+2. `cd /var/www/dashboard`
+3. `git pull`
+4. `sudo docker-compose up`
+
+Nginx should proxy pass to the container on port 5000.
