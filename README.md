@@ -1,6 +1,6 @@
 # Dashboard
 
-A modular dashboard for Ruzinovsky Habbitat monitoring.
+A modular dashboard for Ruzinovsky Habitat monitoring.
 
 ## Development
 
@@ -49,7 +49,7 @@ Don't use API keys outside of safe environments. They are not secure.
 
 ## Design
 
-Based on [One Dark Vivid Pro](https://atom.io/themes/one-dark-pro-vivid-syntax) theme for VS Code. ([source](https://github.com/jsjlewis96/OneDark-Pro/blob/master/themes/OneDark-Pro-vivid.json))
+Based on [One Dark Pro Vivid](https://atom.io/themes/one-dark-pro-vivid-syntax) theme for VS Code. ([source](https://github.com/jsjlewis96/OneDark-Pro/blob/master/themes/OneDark-Pro-vivid.json))
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app). See [readme](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
@@ -58,6 +58,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 1. ssh to server
 2. `cd /var/www/dashboard`
 3. `git pull`
-4. `sudo docker-compose up`
+4. In case of new configuration: `cp .env.template .env` and set `.env`
+5. `sudo docker-compose up --build`
 
 Nginx should proxy pass to the container on port 5000.

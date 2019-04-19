@@ -7,6 +7,8 @@ services:
             - redis
         environment:
             - REDIS_HOST=redis
+            - IFTTT_WEBHOOK_API_KEY=${IFTTT_WEBHOOK_API_KEY}
+            - APIXU_API_KEY=${APIXU_API_KEY}
         ports:
             - "5000:5000"
     redis:
