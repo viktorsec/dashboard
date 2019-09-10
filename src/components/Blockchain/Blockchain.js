@@ -7,7 +7,8 @@ export default class Blockchain extends Component {
   state = {}
 
   componentDidMount() {
-    this.interval = setInterval(this.tick.bind(this), 2000)
+    this.interval = setInterval(this.tick.bind(this), 10000)
+    this.tick()
   }
 
   componentWillUnmount() {
