@@ -34,8 +34,20 @@ body {
 .purpleLabel {
   color: #d55fde; }
 
+.silentLabel {
+  color: #5c6370; }
+
+.small {
+  font-size: 10pt; }
+
+.medium {
+  font-size: 14pt; }
+
 .large {
   font-size: 16pt; }
+
+.larger {
+  font-size: 20pt; }
 
 .extralarge {
   font-size: 28pt; }

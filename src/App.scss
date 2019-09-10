@@ -14,7 +14,10 @@ $background: #282c34;
 
 $font-stack: 'Fira Mono', monospace;
 
+$small: 10pt;
+$medium: 14pt;
 $large: 16pt;
+$larger: 20pt;
 $extra-large: 28pt;
 $huge: 34pt;
 
@@ -69,8 +72,24 @@ body {
   color: $purple;
 }
 
+.silentLabel {
+  color: $mono-3
+}
+
+.small {
+  font-size: $small;
+}
+
+.medium {
+  font-size: $medium;
+}
+
 .large {
   font-size: $large;
+}
+
+.larger {
+  font-size: $larger;
 }
 
 .extralarge {

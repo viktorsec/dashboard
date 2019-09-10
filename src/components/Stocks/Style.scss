@@ -1,0 +1,19 @@
+.columns {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+
+  div {
+    text-align: center;
+  }
+
+  .middleColumn {
+    width: 160px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .sideColumn {
+    width: 60px;
+  }
+}
