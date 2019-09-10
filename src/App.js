@@ -5,6 +5,7 @@ import Header from './components/Header/Header'
 import Blockchain from './components/Blockchain/Blockchain'
 import Clock from './components/Clock/Clock'
 import Fitness from './components/Fitness/Fitness'
+import Flipbook from './components/Flipbook/Flipbook'
 import Weather from './components/Weather/Weather'
 import Pattaya from './components/Pattaya/Pattaya'
 import {getSheetData} from './services/googleSpreadsheetApi.jsx'
@@ -49,13 +50,11 @@ class App extends Component {
           </Row>
           <Row>
             <Col xs={6} md={4}>
-              <Blockchain currency="bitcoin" />
-            </Col>
-            <Col xs={6} md={4}>
-              <Blockchain currency="ethereum" />
-            </Col>
-            <Col xs={6} md={4}>
-              <Blockchain currency="dogecoin" />
+              <Flipbook>
+                <Blockchain currency="bitcoin" />
+                <Blockchain currency="ethereum" />
+                <Blockchain currency="dogecoin" />
+              </Flipbook>
             </Col>
           </Row>
         </Grid>
