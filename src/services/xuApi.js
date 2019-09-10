@@ -1,6 +1,6 @@
 // from https://github.com/farahat80/react-open-weather
 import axios from 'axios';
-import {APIXU_API_KEY} from './../config/apiKeys'
+import {APIXU_API_KEY} from '../config/keys'
 
 function getWeather(type, location) {
   const endpoint = `//api.apixu.com/v1/${type}.json`;

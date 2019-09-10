@@ -1,0 +1,4 @@
+// don't publish this on the web
+export const IFTTT_WEBHOOK_API_KEY = "INSERT_API_KEY"
+export const APIXU_API_KEY = "INSERT_APIXU_API_KEY"
+export const SPREADSHEET_KEY = "INSERT_SPREADSHEET_KEY"
