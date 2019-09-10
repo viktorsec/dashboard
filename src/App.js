@@ -37,6 +37,15 @@ class App extends Component {
   }
 
   componentDidMount() {
+    this.interval = setInterval(this.tick.bind(this), 60 * 1000)
+    this.tick()
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.interval)
+  }
+
+  tick() {
     getSheetData().then((data) => this.setState({googleSheetData: data}))
   }
 
