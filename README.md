@@ -1,6 +1,6 @@
 # Dashboard
 
-A modular dashboard for Ruzinovsky Habbitat monitoring.
+A modular dashboard for Ruzinovsky Habitat monitoring.
 
 ## Development
 
