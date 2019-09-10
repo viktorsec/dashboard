@@ -34,6 +34,7 @@ Your app will be available on your network on `{HOST_IP}:5000`.
 
 1. `yarn run build`
 2. `scp -r build/* pi@192.168.2.66:/var/www/html`
+3. press <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>R</kbd> on Pi
 
 ### Setup API keys
 
