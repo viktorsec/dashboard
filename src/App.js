@@ -68,7 +68,12 @@ class App extends Component {
           <Row>
             <Col xs={6} md={4}>
               <Clock />
-              <Business business="pattaya" />
+              <Flipbook interval={3000}>
+                <Business business="pattaya" />
+                <Business business="smallBilla" />
+                <Business business="bigBilla" />
+                <Business business="postOffice" />
+              </Flipbook>
             </Col>
             <Col xs={6} md={4}>
               <Fitness
@@ -83,7 +88,7 @@ class App extends Component {
           </Row>
           <Row>
             <Col xs={6} md={4}>
-              <Flipbook>
+              <Flipbook interval={10000}>
                 <Blockchain currency="bitcoin" />
                 <Blockchain currency="ethereum" />
                 <Blockchain currency="dogecoin" />

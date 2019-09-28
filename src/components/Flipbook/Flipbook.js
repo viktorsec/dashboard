@@ -7,7 +7,8 @@ export default class Flipbook extends Component {
   }
 
   componentDidMount() {
-    this.interval = setInterval(this.tick.bind(this), 10000)
+    const {interval} = this.props
+    this.interval = setInterval(this.tick.bind(this), interval)
     this.tick()
   }
 
