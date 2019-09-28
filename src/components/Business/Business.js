@@ -2,15 +2,18 @@ import React, {Component} from 'react'
 import moment from 'moment'
 import cx from 'classnames'
 import PropTypes from 'prop-types'
-import {BusinessHours} from './BusinessHours'
+import {data} from './Data'
 
 export const propTypes = {
+  business: PropTypes.string,
+
 }
 
 export const defaultProps = {
+  business: "",
 }
 
-export default class Pattaya extends Component {
+export default class BusinessHours extends Component {
   static propTypes = {
     ...propTypes,
   }
@@ -36,11 +39,18 @@ export default class Pattaya extends Component {
   }
 
   tick() {
+    const {business} = this.props
+    const businessHours = data[business]
+
+    if (!businessHours) {
+      return null
+    }
+
     // TODO fix Sunday
     const now = moment()
     const currentDay = now.format('dddd')
-    const opensAt = moment(BusinessHours[currentDay].opensAt, 'H:mm')
-    const closesAt = moment(BusinessHours[currentDay].closesAt, 'H:mm')
+    const opensAt = moment(businessHours[currentDay].opensAt, 'H:mm')
+    const closesAt = moment(businessHours[currentDay].closesAt, 'H:mm')
 
     if (now.isBetween(opensAt, closesAt)) {
       const nextStateChange = moment(closesAt.diff(now)).format('H:mm:ss')
@@ -50,7 +60,7 @@ export default class Pattaya extends Component {
       })
     } else {
       const tomorrowDay = moment().add(1, 'day').format('dddd')
-      const tomorrowOpensAt = moment(BusinessHours[tomorrowDay].opensAt, 'H:mm').add(1, 'day')
+      const tomorrowOpensAt = moment(businessHours[tomorrowDay].opensAt, 'H:mm').add(1, 'day')
       const nextStateChange = moment(tomorrowOpensAt.diff(now)).format('H:mm:ss')
       this.setState({
         isOpen: false,
@@ -80,9 +90,18 @@ export default class Pattaya extends Component {
   }
 
   render() {
+    const {business} = this.props
+    const businessData = data[business]
+
+    if (!businessData) {
+      return null
+    }
+
+    const {label} = businessData
+
     return (
       <div className={cx('card', 'smallcard')}>
-        <div className="large">Pattaya</div>
+        <div className="large">{label}</div>
         {this.renderStatus()}
       </div>
     )

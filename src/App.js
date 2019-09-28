@@ -3,10 +3,10 @@ import {Grid, Row, Col} from 'react-bootstrap'
 import _ from 'lodash'
 import Header from './components/Header/Header'
 import Blockchain from './components/Blockchain/Blockchain'
+import Business from './components/Business/Business'
 import Clock from './components/Clock/Clock'
 import Fitness from './components/Fitness/Fitness'
 import Flipbook from './components/Flipbook/Flipbook'
-import Pattaya from './components/Pattaya/Pattaya'
 import Stocks from './components/Stocks/Stocks'
 import Weather from './components/Weather/Weather'
 import {getSheetData} from './services/googleSpreadsheetApi.jsx'
@@ -68,7 +68,7 @@ class App extends Component {
           <Row>
             <Col xs={6} md={4}>
               <Clock />
-              <Pattaya />
+              <Business business="pattaya" />
             </Col>
             <Col xs={6} md={4}>
               <Fitness
