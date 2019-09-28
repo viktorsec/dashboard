@@ -8,6 +8,7 @@ export default class Clock extends Component {
     super(props)
     this.state = {
       timeString: this.generateTimeString(),
+      dateString: this.generateDateString(),
     }
   }
 
@@ -23,14 +24,21 @@ export default class Clock extends Component {
     return moment().format('HH:mm:ss')
   }
 
+  generateDateString() {
+    return moment().format('ddd Do MMM')
+  }
+
   tick() {
     this.setState({timeString: this.generateTimeString()})
+    this.setState({dateString: this.generateDateString()})
   }
+
 
   render() {
     return (
-      <div className={cx('card', 'smallcard', 'extralarge')}>
-        {this.state.timeString}
+      <div className={cx('card', 'smallcard')}>
+        <div className="extralarge">{this.state.timeString}</div>
+        <div className="medium">{this.state.dateString}</div>
       </div>
     )
   }
