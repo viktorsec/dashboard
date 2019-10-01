@@ -53,8 +53,14 @@ export function getSheetData() {
         getValue(sheet, 'ATVIChange', 5, 5),
         getValue(sheet, 'TSLA', 6, 4),
         getValue(sheet, 'TSLAChange', 6, 5),
+        getValue(sheet, 'WEN', 10, 4),
+        getValue(sheet, 'WENChange', 10, 5),
         getValue(sheet, 'CRBN', 13, 4),
         getValue(sheet, 'CRBNChange', 13, 5),
+        getValue(sheet, 'MCD', 14, 4),
+        getValue(sheet, 'MCDChange', 14, 5),
+        getValue(sheet, 'AU', 15, 4),
+        getValue(sheet, 'AUChange', 15, 5),
       ]
       Promise.all(promises).then((arrayOfResponses) => {
         resolve(Object.assign({}, ...arrayOfResponses))

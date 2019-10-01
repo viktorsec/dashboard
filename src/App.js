@@ -31,8 +31,14 @@ class App extends Component {
       ATVIChange: 0,
       TSLA: 0,
       TSLAChange: 0,
+      WEN: 0,
+      WENChange: 0,
       CRBN: 0,
       CRBNChange: 0,
+      MCD: 0,
+      MCDChange: 0,
+      AU: 0,
+      AUChange: 0,
     },
   }
 
@@ -58,7 +64,8 @@ class App extends Component {
 
     const {AMZN, AMZNChange, BYND, BYNDChange,
       AAPL, AAPLChange, ATVI, ATVIChange, TSLA,
-      TSLAChange, CRBN, CRBNChange} = googleSheetData
+      TSLAChange, WEN, WENChange, CRBN,
+      CRBNChange, MCD, MCDChange, AU, AUChange} = googleSheetData
     return (
       <div className="app">
         <Grid>
@@ -95,32 +102,16 @@ class App extends Component {
               </Flipbook>
             </Col>
             <Col xs={6} md={4}>
+
               <Stocks
                 symbol="AMZN"
                 price={AMZN}
                 dailyChange={AMZNChange}
               />
               <Stocks
-                symbol="BYND"
-                price={BYND}
-                dailyChange={BYNDChange}
-              />
-              <Stocks
                 symbol="AAPL"
                 price={AAPL}
                 dailyChange={AAPLChange}
-              />
-            </Col>
-            <Col xs={6} md={4}>
-              <Stocks
-                symbol="ATVI"
-                price={ATVI}
-                dailyChange={ATVIChange}
-              />
-              <Stocks
-                symbol="TSLA"
-                price={TSLA}
-                dailyChange={TSLAChange}
               />
               <Stocks
                 symbol="CRBN"
@@ -128,6 +119,42 @@ class App extends Component {
                 dailyChange={CRBNChange}
               />
             </Col>
+            <Flipbook interval={4000}>
+              <Col xs={6} md={4}>
+                <Stocks
+                  symbol="ATVI"
+                  price={ATVI}
+                  dailyChange={ATVIChange}
+                />
+                <Stocks
+                  symbol="TSLA"
+                  price={TSLA}
+                  dailyChange={TSLAChange}
+                />
+                <Stocks
+                  symbol="BYND"
+                  price={BYND}
+                  dailyChange={BYNDChange}
+                />
+              </Col>
+              <Col xs={6} md={4}>
+                <Stocks
+                  symbol="WEN"
+                  price={WEN}
+                  dailyChange={WENChange}
+                />
+                <Stocks
+                  symbol="MCD"
+                  price={MCD}
+                  dailyChange={MCDChange}
+                />
+                <Stocks
+                  symbol="Gold [g]"
+                  price={AU}
+                  dailyChange={AUChange}
+                />
+              </Col>
+            </Flipbook>
           </Row>
         </Grid>
       </div>
