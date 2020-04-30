@@ -39,6 +39,10 @@ class App extends Component {
       MCDChange: 0,
       AU: 0,
       AUChange: 0,
+      BTC: 0,
+      BTCChange: 0,
+      ETH: 0,
+      ETHChange: 0,
     },
   }
 
@@ -65,7 +69,9 @@ class App extends Component {
     const {AMZN, AMZNChange, BYND, BYNDChange,
       AAPL, AAPLChange, ATVI, ATVIChange, TSLA,
       TSLAChange, WEN, WENChange, CRBN,
-      CRBNChange, MCD, MCDChange, AU, AUChange} = googleSheetData
+      CRBNChange, MCD, MCDChange, AU, AUChange,
+      BTC, BTCChange, ETH, ETHChange,
+    } = googleSheetData
     return (
       <div className="app">
         <Grid>
@@ -95,11 +101,16 @@ class App extends Component {
           </Row>
           <Row>
             <Col xs={6} md={4}>
-              <Flipbook interval={10000}>
-                <Blockchain currency="bitcoin" />
-                <Blockchain currency="ethereum" />
-                <Blockchain currency="dogecoin" />
-              </Flipbook>
+              <Stocks
+                symbol="Bitcoin"
+                price={BTC}
+                dailyChange={BTCChange}
+              />
+              <Stocks
+                symbol="Ether"
+                price={ETH}
+                dailyChange={ETHChange}
+              />
             </Col>
             <Col xs={6} md={4}>
 

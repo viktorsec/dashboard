@@ -61,6 +61,11 @@ export function getSheetData() {
         getValue(sheet, 'MCDChange', 14, 5),
         getValue(sheet, 'AU', 15, 4),
         getValue(sheet, 'AUChange', 15, 5),
+
+        getValue(sheet, 'BTC', 16, 4),
+        getValue(sheet, 'BTCChange', 16, 5),
+        getValue(sheet, 'ETH', 17, 4),
+        getValue(sheet, 'ETHChange', 17, 5),
       ]
       Promise.all(promises).then((arrayOfResponses) => {
         resolve(Object.assign({}, ...arrayOfResponses))
